@@ -1,4 +1,4 @@
-# Short Video Creator Application
+# Video Creator Application
 
 This application automates the creation of videos using a background image, a quote, background music, and the audio version of the quote. It can also upload the created videos to YouTube.
 
@@ -24,13 +24,23 @@ This application automates the creation of videos using a background image, a qu
     ```bash
     pip install -r requirements.txt
     ```
-3. Place your service account JSON key and OAuth client secrets JSON file in the project directory.
+3. Place your service account JSON key and OAuth client secrets JSON file in the project directory as shown below:
+    ```
+    video_creator/
+    ├── audio_generator.py
+    ├── video_creator.py
+    ├── youtube_uploader.py
+    ├── main.py
+    ├── requirements.txt
+    ├── README.md
+    ├── service_account.json      # Place your service account JSON key here
+    └── client_secrets.json       # Place your OAuth client secrets JSON file here
+    ```
 
 ### Configuration
 
-Update the paths in `master.py` to point to your service account JSON key and client secrets JSON file:
+Update the paths in `main.py` to point to your service account JSON key and client secrets JSON file:
 ```python
-SERVICE_ACCOUNT_JSON = 'path_to_your_service_account_key.json'
+SERVICE_ACCOUNT_JSON = 'service_account.json'
 CLIENT_SECRETS_FILE = 'client_secrets.json'
 FONT_PATH = 'arial.ttf'
-
