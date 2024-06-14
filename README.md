@@ -44,3 +44,5 @@ Update the paths in `main.py` to point to your service account JSON key and clie
 SERVICE_ACCOUNT_JSON = 'service_account.json'
 CLIENT_SECRETS_FILE = 'client_secrets.json'
 FONT_PATH = 'arial.ttf'
+```
+4. Run main.py
